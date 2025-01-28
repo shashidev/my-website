@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashi's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #6a11cb;
+            border-bottom: 2px solid #6a11cb;
+            display: inline-block;
+        }
+
+        .about, .skills, .projects, .experience, .contact {
+            margin-bottom: 50px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+        }
+
+        /* Cards for Skills Section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-card h2 {
+      color: #2575fc;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .skill-card ul {
+      list-style-type: disc;
+    }
+
+        .projects .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects .project h3 {
+            margin-bottom: 10px;
+            color: #2575fc;
+        }
+
+        .experience .job {
+            margin-bottom: 20px;
+        }
+
+        .experience .job h4 {
+            margin-bottom: 5px;
+            color: #2575fc;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px;
+            font-size: 1rem;
+            background: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact button:hover {
+            background: #2575fc;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shashi Ranjan Kumar</h1>
+        <p>Senior iOS Developer | Innovator | Mentor</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>A Senior iOS Developer with over 9 years of experience in creating scalable and high-performance mobile applications using Swift, SwiftUI, and Objective-C. Adept in architectural patterns like MVVM and VIPER, I aim to deliver solutions that align with client goals while exceeding user expectations.</p>
+        </section>
+
+        <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h2>iOS Development</h2>
+          <ul>
+            <li>Swift, SwiftUI, Objective-C</li>
+            <li>UIKit, Foundation, Combine</li>
+            <li>Core Data, Core Location</li>
+            <li>Core Bluetooth, Core Animation</li>
+            <li>Encryption</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h2>Business Analysis</h2>
+          <ul>
+            <li>Requirements Analysis & Documentation</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h2>Configuration</h2>
+          <ul>
+            <li>Xcode, Git, SourceTree</li>
+            <li>CI/CD Pipeline</li>
+            <li>Auto Layout</li>
+            <li>Offline Apps</li>
+            <li>App Store/TestFlight</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h2>Networking & Data</h2>
+          <ul>
+            <li>APNS, Push Notifications</li>
+            <li>REST API, GraphQL</li>
+            <li>JSON</li>
+          </ul>
+        </div>
+        </section>
+
+            
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <h3>Domino's India App</h3>
+                <p>Developed features for seamless food ordering, boosting retention by 20%.</p>
+            </div>
+            <div class="project">
+                <h3>Popeyes E-commerce App</h3>
+                <p>Implemented analytics tools, enhancing app stability by 15%.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="job">
+                <h4>Sr. Developer Mobile Solution</h4>
+                <p>Publicis Sapient | Dec 2024 - Present</p>
+            </div>
+            <div class="job">
+                <h4>Sr. Software Engineer (iOS)</h4>
+                <p>Jubilant FoodWorks (Domino's India) | Jul 2021 - Dec 2024</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Shashi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
